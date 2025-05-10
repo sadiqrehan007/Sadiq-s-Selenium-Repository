@@ -11,6 +11,7 @@ public class AmazonTest extends BaseTest {
         AmazonPage amazon = new AmazonPage(driver);
         amazon.searchProduct("boAt Stone Spinx Pro 20 w");
         amazon.selectProduct();
+        amazon.selectTest();
         amazon.addToCartAndGoToCart();
 
         String productText = amazon.getProductTextInCart();
